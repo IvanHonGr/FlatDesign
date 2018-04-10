@@ -1,0 +1,37 @@
+h2 {
+  color: blue;
+}
+
+table {
+  border-spacing: 5px;
+  border-radius: 15px;
+}
+
+tr {
+
+}
+
+td {
+}
+
+.num-button input{
+  background-color: #00FFFF;
+  text-align: center;
+  width: 60px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.num-button input:hover,
+.act-button input:hover,
+.act-button img:hover {
+  background-color: #00FF55;
+}
+
+.act-button input {
+  background-color: #00FFCC;
+  text-align: center;
+  width: 60px;
+  padding: 15px;
+  border-radius: 15px;
+}
