@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <center>
+    <h1>
+      <a href="./index.html">Калькулятор</a>
+    </h1>
+    <h1>Tetris</h1>
+    <hr size=20 color="black">
+    <div>
+      <h2>Tetris</h2>
+      <div class="border">
+        <div class="cube" id="c"></div>
+      </div>
+      <input type="button" onclick="cubes.myMove()" value="Click me" />
+      </br>
+      <input type="button" onclick="cubes.moveLeft()" value="Left" />
+      <input type="button" onclick="cubes.moveRight()" value="Right" />
+  </center>
+  <script src="./tetris.js"></script>
+</body>
