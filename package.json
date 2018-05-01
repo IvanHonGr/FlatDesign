@@ -1,0 +1,23 @@
+{
+  "name": "flatdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slaught3r/FlatDesign.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slaught3r/FlatDesign/issues"
+  },
+  "homepage": "https://github.com/Slaught3r/FlatDesign#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}

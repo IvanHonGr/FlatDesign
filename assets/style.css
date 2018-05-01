@@ -47,7 +47,7 @@ td {}
 }
 
 .border {
-  border: solid black;
+  border: solid 3px black;
   height: 300px;
   width: 150px;
   position: relative;
@@ -62,4 +62,23 @@ td {}
   position: absolute;
   left: 10px;
   top: 20px;
+}
+
+.nav a {
+  margin-right: 10px;
+}
+
+.dictionary-list {
+  padding: 10px;
+  margin: 20px;
+  border: solid 2px #dee2e6;
+}
+
+.content {
+  padding: 2em;
+  padding-top: 5em;
+}
+
+.dictionary-list .head {
+  font-size: 1.4em;
 }
