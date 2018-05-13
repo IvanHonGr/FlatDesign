@@ -13,37 +13,34 @@
     <% include partials/nav.ejs %>
         <main role="main">
             <div class="container content">
-                <h2>My Vocabulary</h2>
-                <form>
-                    <div class="row">
-                        <div class="col-2">
-                            <label for="word">Word</label>
+                <h2>Training</h2>
+            </div>
+            <div class="container dictionary-list">
+                <div class="row head">
+                    <div class="col-3">Word</div>
+                    <div class="col-7">Translation</div>
+                    <div class="col-2">Action</div>
+                </div>
+                <% data.forEach(function(word) { %>
+                    <div class="row word-item">
+                        <div class="col-3">
+                            <p>
+                                <%= word.word %>
+                            </p>
                         </div>
-                        <div class="col-6">
-                            <input type="text" name="word" placeholder="Word or phrase" required />
+                        <div class="col-7">
+                            <p style="display: none;">
+                                <%= word.translation + ' | correct: ' + word.correctTimes + '; incorrect: ' + word.incorrectTimes %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <img name ="show" src="/hide.svg" title="show/hide"></button>
+                            <img name ="correct" src="/good.png" title="correct"></button>
+                            <img name ="incorrect" src="/bad.png" title="not correct"></button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <label for="translation">Translation</label>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" name="translation" />
-                        </div>
-                    </div>
-
-                    <button type="submit">Add word</button>
-                </form>
+                    <% }); %>
             </div>
-            <div class="container">
-                <h3>
-                    <a href="/vocabulary/manage">Manage Dictionary</a>
-                </h3>
-                <h3>
-                    <a href="/vocabulary/training">Start Training</a>
-                </h3>
-            </div>
-
         </main>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
@@ -51,7 +48,7 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
             crossorigin="anonymous"></script>
-        <script src="./vocabulary.js"></script>
+        <script src="/vocabulary.js"></script>
 </body>
 
 </html>
