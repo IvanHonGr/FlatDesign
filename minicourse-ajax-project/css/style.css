@@ -43,3 +43,9 @@ body {background-color: #CCC;}
 .article:first-child {
     border-top:none;
 }
+
+.nav a {
+    padding: 10px;
+    margin: 10px;
+    color: green;
+}

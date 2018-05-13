@@ -1,0 +1,6 @@
+/flask
+/venv/*
+/__pycache__/*
+/app/__pycache__/*
+/.git/*
+/node_modules/*

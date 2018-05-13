@@ -1,15 +1,11 @@
 h2 {
-  color: blue;
+  padding: 0.5em;
 }
 
 table {
   border-spacing: 5px;
   border-radius: 15px;
 }
-
-tr {}
-
-td {}
 
 .calc {
   background-color: lightgreen;
@@ -47,7 +43,7 @@ td {}
 }
 
 .border {
-  border: solid black;
+  border: solid 3px black;
   height: 300px;
   width: 150px;
   position: relative;
@@ -62,4 +58,61 @@ td {}
   position: absolute;
   left: 10px;
   top: 20px;
+}
+
+.nav a {
+  margin-right: 10px;
+}
+
+.dictionary-list {
+  margin: 20px;
+  border: solid 2px #dee2e6;
+}
+
+.content {
+  padding: 1em;
+  padding-top: 4em;
+}
+
+.dictionary-list .head {
+  font-size: 1.5em;
+  background-color: lightskyblue;
+  padding-bottom: 1em;
+}
+
+p.error {
+  color: red;
+}
+
+.dictionary-translation {
+  color: indigo;
+  padding-bottom: 1em;
+}
+
+.word-item.even {
+  background-color: lemonchiffon;
+}
+
+.word-item.odd {
+  background-color: lightblue;
+}
+
+div.update input {
+  width: 24em;
+}
+
+.word-item button {
+  margin-top: 5px;
+}
+
+.word-item img {
+  height: 32px;
+  margin-top: 5px;
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.word-item img:hover {
+  background-color: plum;
+  cursor: pointer;
 }
