@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+</head>
+
+<body>
+  <% include partials/nav.ejs %>
+    <center>
+      <div class="content">
+        <h2>Tetris</h2>
+        <div class="border">
+          <div class="cube" id="c"></div>
+        </div>
+        <input type="button" onclick="cubes.myMove()" value="Click me" />
+        </br>
+        <input type="button" onclick="cubes.moveLeft()" value="Left" />
+        <input type="button" onclick="cubes.moveRight()" value="Right" />
+    </center>
+    <script src="./tetris.js"></script>
+</body>
