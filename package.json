@@ -17,9 +17,22 @@
   },
   "homepage": "https://github.com/Slaught3r/FlatDesign#readme",
   "dependencies": {
+    "browser-sync": "^2.24.7",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
+    "gulp-eslint": "^5.0.0",
+    "gulp-jasmine-browser": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "jasmine-core": "^3.2.1",
     "mongodb": "^3.0.7",
-    "mongoose": "^5.0.17"
+    "mongoose": "^5.0.17",
+    "puppeteer": "^1.8.0",
+    "sass": "^1.14.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-google": "^0.10.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0"
   }
 }

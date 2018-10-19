@@ -4,101 +4,100 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Calculator</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 
 <body>
   <% include partials/nav.ejs %>
+  <div class="content">
     <center>
-      <div class="content">
-        <h2>Calculator</h2>
-        <div class="calc">
-          <table>
-            <form name="calculator">
-              <tr>
-                <td colspan="3">
-                  <input class="calc_input" type="text" name="input" placeholder="0">
-                </td>
-                <td class="act-button">
-                  <img src="https://image.flaticon.com/icons/svg/134/134218.svg" height="25px" width="40px" margin="10px" onclick="clearVal()">
-                </td>
-              </tr>
-              <tr>
-                <td class="num-button">
-                  <input type="button" value="7" onclick="updateValue(7)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="8" onclick="updateValue(8)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="9" onclick="updateValue(9)">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="/" onclick="updateValue('/')">
-                </td>
-              </tr>
-              <tr>
-                <td class="num-button">
-                  <input type="button" value="4" onclick="updateValue(4)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="5" onclick="updateValue(5)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="6" onclick="updateValue(6)">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="*" onclick="updateValue('*')">
-                </td>
-              </tr>
-              <tr>
-                <td class="num-button">
-                  <input type="button" value="1" onclick="updateValue(1)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="2" onclick="updateValue(2)">
-                </td>
-                <td class="num-button">
-                  <input type="button" value="3" onclick="updateValue(3)">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="-" onclick="updateValue('-')">
-                </td>
-              </tr>
-              <tr>
-                <td class="num-button">
-                  <input type="button" value="0" onclick="updateValue(0)">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="." onclick="updateValue('.')">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="=" onclick="equal()">
-                </td>
-                <td class="act-button">
-                  <input type="button" value="+" onclick="updateValue('+')">
-                </td>
-              </tr>
-            </form>
-          </table>
-        </div>
+      <h2>Calculator</h2>
+      <div class="calc">
+        <table>
+          <form name="calculator">
+            <tr>
+              <td colspan="3">
+                <input class="calc_input" type="text" name="input" placeholder="0">
+              </td>
+              <td class="act-button">
+                <img src="https://image.flaticon.com/icons/svg/134/134218.svg" height="25px" width="40px" margin="10px" onclick="clearVal()">
+              </td>
+            </tr>
+            <tr>
+              <td class="num-button">
+                <input type="button" value="7" onclick="updateValue(7)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="8" onclick="updateValue(8)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="9" onclick="updateValue(9)">
+              </td>
+              <td class="act-button">
+                <input type="button" value="/" onclick="updateValue('/')">
+              </td>
+            </tr>
+            <tr>
+              <td class="num-button">
+                <input type="button" value="4" onclick="updateValue(4)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="5" onclick="updateValue(5)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="6" onclick="updateValue(6)">
+              </td>
+              <td class="act-button">
+                <input type="button" value="*" onclick="updateValue('*')">
+              </td>
+            </tr>
+            <tr>
+              <td class="num-button">
+                <input type="button" value="1" onclick="updateValue(1)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="2" onclick="updateValue(2)">
+              </td>
+              <td class="num-button">
+                <input type="button" value="3" onclick="updateValue(3)">
+              </td>
+              <td class="act-button">
+                <input type="button" value="-" onclick="updateValue('-')">
+              </td>
+            </tr>
+            <tr>
+              <td class="num-button">
+                <input type="button" value="0" onclick="updateValue(0)">
+              </td>
+              <td class="act-button">
+                <input type="button" value="." onclick="updateValue('.')">
+              </td>
+              <td class="act-button">
+                <input type="button" value="=" onclick="equal()">
+              </td>
+              <td class="act-button">
+                <input type="button" value="+" onclick="updateValue('+')">
+              </td>
+            </tr>
+          </form>
+        </table>
       </div>
     </center>
-    <script>
-      function equal() {
-        document.calculator.input.value = eval(document.calculator.input.value);
-      }
+  </div>
+  <script>
+    function equal() {
+      document.calculator.input.value = eval(document.calculator.input.value);
+    }
 
-      function clearVal() {
-        document.calculator.input.value = '';
-      }
+    function clearVal() {
+      document.calculator.input.value = '';
+    }
 
-      function updateValue(val) {
-        document.calculator.input.value += val;
-      }
-    </script>
+    function updateValue(val) {
+      document.calculator.input.value += val;
+    }
+  </script>
 </body>
 
 </html>

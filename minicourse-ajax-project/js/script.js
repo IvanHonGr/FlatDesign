@@ -21,26 +21,7 @@ function loadData() {
     $body.append('<img class="bgimg" src="' + str1 + '">');
 
     var request = "http://samples.openweathermap.org/data/2.5/forecast?q=London,us&appid=b6907d289e10d714a6e88b30761fae22";
-<<<<<<< HEAD
     $.getJSON(request, function (data) {
-        //console.log(data);
-        var items = [];
-        $.each(data.list, function (key, val) {
-            items.push("<li>key = " + key + "; value=" + val + "</li>");
-        });
-        console.log("HEY!!!");
-        $("<ul/>", {
-            "class": "my-new-list",
-            html: items.join("")
-        }).appendTo($body);
-    }, {
-            tags: "mount rainier",
-            tagmode: "any",
-            format: "json"
-        });
-
-=======
-    $.getJSON(request, function(data) {
         var items = [];
         for (var i = 0; i < data.list.length; i++) {
             var item = data.list[i];
@@ -49,8 +30,8 @@ function loadData() {
                 break;
             }
         };
-        $nytElem.append(items.join( "" ));
-    }).error(function() {
+        $nytElem.append(items.join(""));
+    }).error(function () {
         $nytHeaderElem.text = "Weather cant be loaded"
         $nytElem.append('<li>nothing found :( </li>');
     });
@@ -76,8 +57,7 @@ function loadData() {
             $nytElem.append('<li>nothing found :( </li>');
         }
     });
-    
->>>>>>> 1498d9237fb34c6ad77ad37ae7a1618c49ca2f43
+
 
     return false;
 };
@@ -140,17 +120,3 @@ function getEvent(type) {
 }
 document.getElementsByClassName('root-0-284 raised-0-288')[0].dispatchEvent(getEvent('dragstart'));
 document.querySelector('[href="/art/16533?sort=artByTitle"]').dispatchEvent(getEvent('drop'));
-
-
-function getEvent(type) {
-    var dragEvent = document.createEvent('CustomEvent');
-    dragEvent.initCustomEvent(type, true, true, null);
-    dragEvent.dataTransfer = {
-        setData: function (type, val) {
-            this.data[type] = val;
-        }
-    };
-    return dragEvent;
-}
-document.getElementsByClassName('root-0-284')[0].dispatchEvent(getEvent('dragstart'));
-document.querySelector('[href="/art/16541?sort=artByTitle"]').dispatchEvent(getEvent('drop'));

@@ -1,0 +1,118 @@
+h2 {
+  padding: 0.5em; }
+
+table {
+  border-spacing: 5px;
+  border-radius: 15px; }
+
+.calc {
+  background-color: lightgreen;
+  width: 301px;
+  padding: 15px; }
+
+.num-button input {
+  background-color: #00FFFF;
+  text-align: center;
+  width: 60px;
+  padding: 15px;
+  border-radius: 15px; }
+
+.num-button input:hover,
+.act-button input:hover,
+.act-button img:hover {
+  background-color: #00FF55; }
+
+.act-button input {
+  background-color: #00FFCC;
+  text-align: center;
+  width: 60px;
+  padding: 15px;
+  border-radius: 15px; }
+
+.calc_input {
+  -webkit-box-shadow: 0 0 3px #999999;
+          box-shadow: 0 0 3px #999999;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px; }
+
+.border {
+  border: solid 3px black;
+  height: 300px;
+  width: 150px;
+  position: relative; }
+
+.cube {
+  border-radius: 3px;
+  border: solid red;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  position: absolute;
+  left: 10px;
+  top: 20px; }
+
+.nav a {
+  margin-right: 10px; }
+
+.dictionary-list {
+  margin: 20px;
+  border: solid 2px #dee2e6; }
+
+.content {
+  padding: 1em;
+  padding-top: 4em;}
+
+.theory-container {
+  display: flex;
+}
+
+.dictionary-list .head {
+  font-size: 1.5em;
+  background-color: lightskyblue;
+  padding-bottom: 1em; }
+
+p.error {
+  color: red; }
+
+.dictionary-translation {
+  color: indigo;
+  padding-bottom: 1em; }
+
+.word-item.even {
+  background-color: lemonchiffon; }
+
+.word-item.odd {
+  background-color: lightblue; }
+
+div.update input {
+  width: 24em; }
+
+.word-item button {
+  margin-top: 5px; }
+
+.word-item img {
+  height: 32px;
+  margin-top: 5px;
+  margin-right: 15px;
+  vertical-align: top; }
+
+.word-item img:hover {
+  background-color: plum;
+  cursor: pointer; }
+
+.theory-nav {
+  width: 20%;
+  order: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.theory-nav__link {
+
+}
+
+.theory-content {
+  width: 80%;
+  order: 1;
+}
